@@ -13,7 +13,7 @@ gmt set
     FONT_ANNOT_PRIMARY 9p,Palatino-Roman,dimgray \
     FONT_LABEL 8p,Palatino-Roman,dimgray \
 # Step-2. Generate a file
-ps=Hist_two_KKT.ps
+ps=Hist_two_KKT_north.ps
 # Step-3. Plot rose diagram
 gmt psrose table2.txt -i1,4 -R0/1/0/360 \
     -A7r -S1.0in \
@@ -40,4 +40,4 @@ EOF
 # Step-6. Add GMT logo
 gmt logo -Dx6.0/0.0+o-0.5c/-2.0c+w2c -O >> $ps
 # Step-7. Convert to image file using GhostScript (portrait orientation, 720 dpi)
-gmt psconvert Hist_two_KKT.ps -A0.2c -E720 -P -Tj -Z
+gmt psconvert Hist_two_KKT_north.ps -A0.2c -E720 -P -Tj -Z
