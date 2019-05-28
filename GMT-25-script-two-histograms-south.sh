@@ -1,6 +1,6 @@
 #!/bin/bash
-# Purpose: Make standard histograms of the cross-section profiles (here: Kuril-Kamchatka Trench)
-# GMT modules: pshistogram, pstext, logo, psconvert
+# Purpose: Plot two histograms of the cross-section profiles (here: Kuril-Kamchatka Trench)
+# GMT modules: gmtset, psrose, pshistogram, pslegend, logo, psconvert
 # Step-1. GMT set up
 gmt set
     MAP_TITLE_OFFSET 0.5c \
